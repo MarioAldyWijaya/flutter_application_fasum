@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "509736648186",
-    "project_id": "prjpab2-si61-2327240082",
-    "storage_bucket": "prjpab2-si61-2327240082.firebasestorage.app"
+    "project_number": "17705210064",
+    "project_id": "tes1-2893c",
+    "storage_bucket": "tes1-2893c.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:509736648186:android:d3b778620f1da779cd3843",
+        "mobilesdk_app_id": "1:17705210064:android:6628c837ed517567ccced5",
         "android_client_info": {
           "package_name": "com.example.flutter_application_fasum"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAgRKaJRMC5ydntZK1z26c58GwocVYeqoE"
+          "current_key": "AIzaSyAJsd6Db-q7aH-ac6emMM-LTusM2xnES48"
         }
       ],
       "services": {

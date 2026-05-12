@@ -11,7 +11,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:image_picker/image_picker.dart';
 
 class AddPostScreen extends StatefulWidget {
-  co`nst AddPostScreen({super.key});
+  const AddPostScreen({super.key});
 
   @override
   State<AddPostScreen> createState() => _AddPostScreenState();
