@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_fasum/screens/fullscreen_image_screen.dart';
 import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -55,15 +56,40 @@ class _DetailScreenState extends State<DetailScreen> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Hero(
-            tag: widget.heroTag,
-            child: Image.memory(
-              base64Decode(widget.imageBase64),
-              fit: BoxFit.cover,
-              width: double.infinity,
-              height: 250,
-            ),
+          Stack(
+            children: [
+              Hero(
+                tag: widget.heroTag,
+                child: Image.memory(
+                  base64Decode(widget.imageBase64),
+                  fit: BoxFit.cover,
+                  width: double.infinity,
+                  height: 250,
+                ),
+              ),
+              Positioned(
+                top: 12,
+                right: 12,
+                child: IconButton(
+                  icon: const Icon(Icons.fullscreen, color: Colors.white),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:
+                            (_) => FullScreenImageScreen(
+                              imageBase64: widget.imageBase64,
+                            ),
+                      ),
+                    );
+                  },
+                  tooltip: 'Lihat gambar penuh',
+                  style: IconButton.styleFrom(backgroundColor: Colors.black45),
+                ),
+              ),
+            ],
           ),
+
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
